@@ -60,12 +60,13 @@ export default function BlogPage({ params }: any) {
         <link rel="canonical" href={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
         <meta name="robots" content="index, follow" />
 
-        {/* OpenGraph */}
-        <meta property="og:title" content={`${blog.title} | Shubham Narmada Shivling`} />
-        <meta property="og:description" content={blog.description} />
-        {blog.topImage && <meta property="og:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />}
-        <meta property="og:url" content={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
-        <meta property="og:type" content="article" />
+      {/* OpenGraph */}
+<meta property="og:title" content={`${blog.title} | Shubham Narmada Shivling`} />
+<meta property="og:description" content={blog.description} />
+{blog.topImage && <meta property="og:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />}
+<meta property="og:url" content={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
+<meta property="og:type" content="article" />
+
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
