@@ -1,8 +1,5 @@
 // blogs.ts
 
-
-
-
 export interface BlogSection {
   title: string;
   paragraphs?: string[];
@@ -15,6 +12,7 @@ export interface Blog {
   description: string;
   keywords: string[];
   sections: BlogSection[];
+topImage?: string;
 }
 
 // ✅ Blog data

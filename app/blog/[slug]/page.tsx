@@ -1,9 +1,26 @@
 import type { Metadata } from "next"; 
 import Link from "next/link";
 import Image from "next/image";
-import { blogs } from "../../data/blogs";
+import { blogs as rawBlogs } from "../../data/blogs"; // typed
 import { notFound } from "next/navigation";
 import Head from "next/head";
+
+/* ================= BLOG TYPE ================= */
+interface Blog {
+  title: string;
+  description: string;
+  slug: string;
+  topImage?: string;            // <- optional property
+  datePublished?: string;
+  sections: {
+    title?: string;
+    paragraphs?: string[];
+    list?: string[];
+  }[];
+}
+
+/* ================= TYPED BLOGS ARRAY ================= */
+const blogs: Blog[] = rawBlogs;
 
 /* ================= STATIC ROUTES ================= */
 export function generateStaticParams() {
@@ -47,7 +64,7 @@ export default function BlogPage({ params }: any) {
     "vedic spirituality",
     "mahadev worship",
     "hindu dharm blog",
-    "shubham narmadashivling.com"
+    "shubhamnarmadashivling.com"
   ].join(",");
 
   return (
@@ -60,19 +77,22 @@ export default function BlogPage({ params }: any) {
         <link rel="canonical" href={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
         <meta name="robots" content="index, follow" />
 
-      {/* OpenGraph */}
-<meta property="og:title" content={`${blog.title} | Shubham Narmada Shivling`} />
-<meta property="og:description" content={blog.description} />
-{blog.topImage && <meta property="og:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />}
-<meta property="og:url" content={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
-<meta property="og:type" content="article" />
-
+        {/* OpenGraph */}
+        <meta property="og:title" content={`${blog.title} | Shubham Narmada Shivling`} />
+        <meta property="og:description" content={blog.description} />
+        {blog.topImage && (
+          <meta property="og:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />
+        )}
+        <meta property="og:url" content={`https://shubhamnarmadashivling.com/blog/${blog.slug}`} />
+        <meta property="og:type" content="article" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${blog.title} | Shubham Narmada Shivling`} />
         <meta name="twitter:description" content={blog.description} />
-        {blog.topImage && <meta name="twitter:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />}
+        {blog.topImage && (
+          <meta name="twitter:image" content={`https://shubhamnarmadashivling.com${blog.topImage}`} />
+        )}
 
         {/* JSON-LD BlogPosting Schema */}
         <script
@@ -93,7 +113,8 @@ export default function BlogPage({ params }: any) {
                 name: "Shubham Narmada Shivling",
                 logo: "https://shubhamnarmadashivling.com/logo.png"
               },
-              url: `https://shubhamnarmadashivling.com/blog/${blog.slug}`,
+              url:
+ `https://shubhamnarmadashivling.com/blog/${blog.slug}`,
               mainEntityOfPage: `https://shubhamnarmadashivling.com/blog/${blog.slug}`,
               datePublished: blog.datePublished || new Date().toISOString(),
             }),
