@@ -1,17 +1,16 @@
 import { MetadataRoute } from 'next'
-import { blogs } from '../data/blogs'
+import { blogs } from '../../data/blogs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
   const baseUrl = 'https://shubhamnarmadashivling.com'
 
-  // Static Pages
   const staticPages = [
     '',
     '/about',
     '/blog',
     '/product',
-    '/FAQ',
+    '/faq',
     '/terms-conditions',
     '/privacy-policy',
     '/shipping-policy',
@@ -23,7 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === '' ? 1 : 0.8,
   }))
 
-  // Blog Pages
   const blogPages = blogs.map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
     lastModified: new Date(),
