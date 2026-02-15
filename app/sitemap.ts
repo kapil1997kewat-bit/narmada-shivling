@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { blogs } from '../../data/blogs'
+import { blogs } from './data/blogs'
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
@@ -31,4 +31,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticPages, ...blogPages]
 }
-
