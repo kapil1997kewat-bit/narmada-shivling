@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/blog',
     '/product',
-    '/faq',
+    '/FAQ',
     '/terms-conditions',
     '/privacy-policy',
     '/shipping-policy',
@@ -31,3 +31,4 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticPages, ...blogPages]
 }
+
