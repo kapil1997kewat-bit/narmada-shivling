@@ -2,9 +2,11 @@
   "name": "narmada-shivling",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next-sitemap",
-    "start": "next start"
+  "dev": "next dev",
+  "build": "next build && node scripts/generate-sitemap.js",
+  "start": "next start"
+
+
   },
   "dependencies": {
     "framer-motion": "^12.34.0",
