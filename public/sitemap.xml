@@ -1,40 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-  <loc>https://shubhamnarmadashivling.com</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/about</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/blog</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/product</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/FAQ</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/terms-conditions</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/privacy-policy</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/shipping-policy</loc>
-</url>
-
-<url>
-  <loc>https://shubhamnarmadashivling.com/disclaimer</loc>
-</url>
-
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://shubhamnarmadashivling.com/sitemap-0.xml</loc></sitemap>
+</sitemapindex>
