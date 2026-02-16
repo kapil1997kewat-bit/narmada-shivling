@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Narmada Shivling Shop – नर्मदा शिवलिंग शॉप",
@@ -14,11 +15,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="hi">
       <body className="min-h-screen flex flex-col overflow-x-hidden">
         <Header />
+
         <main className="flex-1 pt-[120px] md:pt-[140px] w-full max-w-7xl mx-auto px-4">
           {children}
         </main>
+
         <Footer />
         <FloatingButtons />
+
+        {/* ✅ Vercel Analytics */}
+        <Analytics />
 
         {/* Google Analytics */}
         <Script
