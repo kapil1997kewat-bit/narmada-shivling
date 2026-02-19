@@ -184,7 +184,7 @@ content="narmada shivling, narmada shivling price, narmada shivling for home, or
       playsInline
       controls
     >
-      <source src="/video/alok.mp4" type="video/mp4" />
+      <source src="/alok.mp4" type="video/mp4" />
     </video>
   </div>
 </section>
