@@ -910,6 +910,7 @@ html, body {
 /* =========================================
    RESPONSIVE MEDIA QUERIES
 ========================================= */
+
 @media (max-width: 768px) {
   .card-body {
     flex-direction: column;
@@ -955,24 +956,52 @@ html, body {
     text-align: center;
   }
 }
-/* ===== IMAGE WRAPPER ===== */
-.banner-wrapper{
-  position:relative;
-  width:100%;
-  aspect-ratio:16/10;
-  overflow:hidden;
-  border-radius:14px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.18);
+
+/* =========================================
+   IMAGE + VIDEO COMMON WRAPPER
+========================================= */
+
+.banner-wrapper,
+.video-wrapper{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;   /* Desktop Same Size */
+  overflow: hidden;
+  border-radius: 0 !important;  /* REMOVE CORNER */
+  box-shadow: none;
 }
 
-/* ===== RESPONSIVE IMAGE ===== */
+/* =========================================
+   IMAGE
+========================================= */
+
 .responsive-banner{
-  width:100%;
-  height:100%;
-  object-fit:contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0 !important;  /* REMOVE CORNER */
 }
 
-/* ===== OVERLAY TEXT ===== */
+/* =========================================
+   VIDEO
+========================================= */
+
+.responsive-video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 0 !important;  /* REMOVE CORNER */
+  transform: scale(1.5); /* Adjust 1.4–1.6 if needed */
+}
+
+/* =========================================
+   OVERLAY
+========================================= */
+
 .banner-overlay{
   position:absolute;
   inset:0;
@@ -986,56 +1015,19 @@ html, body {
   padding:15px;
 }
 
-/* ===== VIDEO WRAPPER ===== */
-.video-wrapper{
-  width:100%;
-  max-width:1000px;
-  margin:auto;
-  aspect-ratio:16/9;
-}
+/* =========================================
+   MOBILE SETTINGS
+========================================= */
 
-/* ===== VIDEO ===== */
-.responsive-video{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:14px;
-}
+@media(max-width:768px){
 
-/* ===== MOBILE ===== */
-@media(max-width:480px){
-  .banner-wrapper{
-    aspect-ratio:5/5;
-  }
-
+  .banner-wrapper,
   .video-wrapper{
-    aspect-ratio:3/5;
+    aspect-ratio:3/5;   /* Square Mobile */
   }
-}
 
-/* ===== IMAGE WRAPPER ===== */
-.banner-wrapper{
-  position:relative;
-  width:100%;
-  aspect-ratio:16/10;
-  overflow:hidden;
-  border-radius:14px;
-  box-shadow:0 4px 14px rgba(0,0,0,0.18);
-}
-
-/* ===== RESPONSIVE IMAGE ===== */
-.responsive-banner{
-  width:100%;
-  height:100%;
-  object-fit:cover;   /* IMPORTANT CHANGE */
-  object-position:center;
-  display:block;
-}
-
-/* ===== MOBILE ===== */
-@media(max-width:480px){
-  .banner-wrapper{
-    aspect-ratio:5/5;
+  .responsive-video{
+    transform:scale(1); /* No zoom on mobile */
   }
-}
 
+}
