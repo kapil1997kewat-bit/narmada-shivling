@@ -31,10 +31,10 @@ export default function HomePage() {
       alt: "Banana Shape Narmada Shivling (Narmada Kankar)",
     },
     {
-      title: "Bakawa Special Shivling",
-      href: "/blog/bakawa-narmada-shivling",
+      title: "bakawan Special Shivling",
+      href: "/blog/bakawan-narmada-shivling",
       img: "/60611.jpg",
-      alt: "Bakawa Special Original Narmada Shivling",
+      alt: "bakawan Special Original Narmada Shivling",
     },
     {
       title: "Temple Puja Shivling",
@@ -78,14 +78,42 @@ export default function HomePage() {
         <title>Shubham Narmada Shivling – Original & Authentic Shivlings</title>
         <meta
           name="description"
-          content="Buy Original Narmada Shivling directly from Narmada River. Explore Janeu Dhari, Bakawa, Temple, Natural Shivlings. Contact via Call or WhatsApp."
+          content="Buy Original Narmada Shivling directly from Narmada River. Explore Janeu Dhari, bakawan, Temple, Natural Shivlings. Contact via Call or WhatsApp."
         />
         <meta 
 name="keywords" 
-content="narmada shivling, narmada shivling price, narmada shivling for home, original narmada shivling, bakawa shivling, shivling bakawa, narmadeshwar shivling, narmadeshwar mahadev, narmadeshwar shivling price, narmadeshwar shivling original, narmadeshwar shivling benefits, how to identify original narmadeshwar shivling, narmadeshwar shivling for home, big size narmadeshwar shivling, natural narmadeshwar shivling, narmada river shivling, narmada kankar shivling, ujjain shivling, omkareshwar shivling, narmadeshwar shivling in ujjain, narmadeshwar shivling in omkareshwar, original shivling for home temple, temple size shivling, puja shivling, shivling stand, shivling online, buy shivling online india, hindu shivling stone, real narmadeshwar stone, janeu dhari shivling, parad shivling, sphatik shivling, 12 jyotirlinga shivling, somnath shivling, mallikarjuna shivling, mahakaleshwar shivling, omkareshwar jyotirlinga shivling, baidyanath shivling, bhimashankar shivling, rameshwaram shivling, nageshwar shivling, kashi vishwanath shivling, kedarnath shivling, trimbakeshwar shivling, grishneshwar shivling, home mandir shivling, puja ke liye shivling, asli narmadeshwar shivling kaise pehchane, narmada shivling asli, bakawa narmadeshwar shivling, omkareshwar narmada shivling, ujjain original shivling, mandir sthapana shivling, religious shivling stone, spiritual shivling india, narmada stone shivling online"
+content="narmada shivling, narmada shivling price, narmada shivling for home, original narmada shivling, bakawan shivling, shivling bakawan, narmadeshwar shivling, narmadeshwar mahadev, narmadeshwar shivling price, narmadeshwar shivling original, narmadeshwar shivling benefits, how to identify original narmadeshwar shivling, narmadeshwar shivling for home, big size narmadeshwar shivling, natural narmadeshwar shivling, narmada river shivling, narmada kankar shivling, ujjain shivling, omkareshwar shivling, narmadeshwar shivling in ujjain, narmadeshwar shivling in omkareshwar, original shivling for home temple, temple size shivling, puja shivling, shivling stand, shivling online, buy shivling online india, hindu shivling stone, real narmadeshwar stone, janeu dhari shivling, parad shivling, sphatik shivling, 12 jyotirlinga shivling, somnath shivling, mallikarjuna shivling, mahakaleshwar shivling, omkareshwar jyotirlinga shivling, baidyanath shivling, bhimashankar shivling, rameshwaram shivling, nageshwar shivling, kashi vishwanath shivling, kedarnath shivling, trimbakeshwar shivling, grishneshwar shivling, home mandir shivling, puja ke liye shivling, asli narmadeshwar shivling kaise pehchane, narmada shivling asli, bakawan narmadeshwar shivling, omkareshwar narmada shivling, ujjain original shivling, mandir sthapana shivling, religious shivling stone, spiritual shivling india, narmada stone shivling online"
 />
 
+{/* Video Schema JSON-LD */}
+      <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: "Original Narmadeshwar Shivling Video",
+              description:
+                "Watch the authentic Narmadeshwar Shivling video from Bakawan & Omkareshwar, Madhya Pradesh.",
+              thumbnailUrl: "https://shubhamnarmadashivling.com/alok2.png",
+              uploadDate: "2026-02-28T00:00:00Z",
+              duration: "PT2M30S",
+              contentUrl: "https://shubhamnarmadashivling.com/alok.mp4",
+              embedUrl: "https://shubhamnarmadashivling.com/alok.mp4",
+              publisher: {
+                "@type": "Organization",
+                name: "Shubham Narmada Shivling",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://shubhamnarmadashivling.com/alok2.png",
+                },
+              },
+            }),
+          }}
+        />
+
       </Head>
+
 
       <main className="container mx-auto px-4 mt-24">
 
