@@ -96,7 +96,7 @@ export default function ContactPage() {
               "publisher": {
                 "@type": "Organization",
                 "name": "Shubham Narmada Shivling",
-                "logo": "https://shubhamnarmadashivling.com/logo.png",
+                "logo": "https://shubhamnarmadashivling.com/alok2.png",
                 "sameAs": [
                   "https://www.facebook.com/share/16nQ9SpdD5/",
                   "https://www.instagram.com/narmadashivling09/",
@@ -130,7 +130,7 @@ export default function ContactPage() {
         <section className="contact-wrapper">
           <div className="contact-card">
             <h2>📞 Contact – Alok Kewat</h2>
-            <p><strong>📍 Address:</strong> Bakawa, MP – 451113</p>
+            <p><strong>📍 Address:</strong> bakawan, MP – 451113</p>
             <p><strong>📞 Phone:</strong> <a href="tel:+919630893459">9630893459</a></p>
             <p><strong>📧 Email:</strong> <a href="mailto:Alokkewat1234@gmail.com">Alokkewat1234@gmail.com</a></p>
             <p><strong>🕒 Availability:</strong> 24×7</p>
@@ -143,7 +143,7 @@ export default function ContactPage() {
 
           <div className="contact-card">
             <h2>📞 Contact – Shubham Kewat</h2>
-            <p><strong>📍 Address:</strong> Bakawa, MP – 451113</p>
+            <p><strong>📍 Address:</strong> bakawan, MP – 451113</p>
             <p><strong>📞 Phone:</strong> <a href="tel:+918103316882">8103316882</a></p>
             <p><strong>📧 Email:</strong> <a href="mailto:Kapil1997kewat@gmail.com">Kapil1997kewat@gmail.com</a></p>
             <p><strong>🕒 Availability:</strong> 24×7</p>
