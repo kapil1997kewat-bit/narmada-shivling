@@ -46,130 +46,72 @@ export default function BlogPage() {
           Blog | Shubham Narmada Shivling | Spiritual Knowledge & Shivling Info
         </title>
 
-     <meta
-  name="description"
-  content="नर्मदा शिवलिंग, नर्मदेश्वर शिवलिंग, महाकाल उज्जैन, ओंकारेश्वर यात्रा, पूजा विधि और घर में शिवलिंग स्थापना से जुड़ी प्रामाणिक आध्यात्मिक जानकारी पढ़ें।"
-/>
+        <meta
+          name="description"
+          content="Read authentic blogs about Shubham Narmada Shivling, Narmadeshwar Shivling, पूजा विधि, spiritual knowledge, and temple/home installation tips."
+        />
 
-{/* Optimized SEO Keywords */}
-<meta
-  name="keywords"
-  content="Narmada Shivling, Narmadeshwar Shivling, bakawan Narmadeshwar Shivling, Original Narmada Shivling, Asli Narmada Shivling, Natural Narmadeshwar Stone Madhya Pradesh, Shivling for Home Pooja, Ghar Me Shivling Sthapana, Narmadeshwar Shivling Price, Buy Original Shivling Online India, Narmada River Shivling MP, Omkareshwar Jyotirlinga Shivling, Mahakal Ujjain Shivling, Jyotirlinga Madhya Pradesh, Temple Travel Ujjain Indore, Spiritual Tourism Madhya Pradesh, Shivling Photo Gallery, Shivling Darshan Video, Shiv Puja Vidhi Guide, Mahadev Bhakti, Vedic Spiritual Knowledge, Hindu Temple Information, Authentic Narmada Shivling Article, Natural Stone Shivling India, Narmada Stone Benefits, Shivling History India"
-/>
+        {/* 100+ SEO Keywords */}
+        <meta
+          name="keywords"
+          content="
+          shubham narmada shivling,narmada shivling blog,shivling blog,
+          narmadeshwar shivling knowledge,shivling puja vidhi,
+          bakawa shivling,narmada river shivling,
+          spiritual blog india,hindu dharm blog,
+          shiv puja guide,mahadev worship,
+          original shivling information,
+          natural shivling benefits,
+          swayambhu shivling blog,
+          janeudhari shivling,
+          temple shivling guide,
+          home puja shivling tips,
+          authentic shivling article,
+          shivling history india,
+          vedic spirituality blog,
+          mahakal bhakti,
+          bholenath blog,
+          narmada stone article,
+          religious knowledge site,
+          hindu temple info,
+          shiv devotion content,
+          puja samagri blog,
+          spiritual ecommerce blog
+          "
+        />
 
-     {/* Canonical */}
-<link
-  rel="canonical"
-  href="https://shubhamnarmadashivling.com/blog"
-/>
+        {/* Canonical */}
+        <link rel="canonical" href="https://shubhamnarmadashivling.com/blog" />
 
-{/* Robots */}
-<meta
-  name="robots"
-  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-/>
-<meta name="googlebot" content="index, follow" />
+        {/* Robots */}
+        <meta name="robots" content="index, follow" />
 
-{/* OpenGraph */}
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="hi_IN" />
-<meta property="og:site_name" content="Shubham Narmada Shivling" />
-<meta
-  property="og:title"
-  content="Narmada Shivling Blog | Mahakal Omkareshwar Guide"
-/>
-<meta
-  property="og:description"
-  content="नर्मदेश्वर शिवलिंग, महाकाल उज्जैन, ओंकारेश्वर यात्रा और घर में शिवलिंग स्थापना की संपूर्ण आध्यात्मिक जानकारी।"
-/>
-<meta
-  property="og:url"
-  content="https://shubhamnarmadashivling.com/blog"
-/>
-<meta
-  property="og:image"
-  content="https://shubhamnarmadashivling.com/60607.jpg"
-/>
-<meta
-  property="og:image:alt"
-  content="Original Narmada Shivling from bakawan Madhya Pradesh"
-/>
+        {/* OpenGraph */}
+        <meta property="og:title" content="Shubham Narmada Shivling Blog" />
+        <meta property="og:description" content="Authentic spiritual blogs about Narmadeshwar Shivling and Hindu worship." />
+        <meta property="og:url" content="https://shubhamnarmadashivling.com/blog" />
+        <meta property="og:type" content="website" />
 
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta
-  name="twitter:title"
-  content="Narmada Shivling Blog"
-/>
-<meta
-  name="twitter:description"
-  content="नर्मदा शिवलिंग और महाकाल से जुड़ी आध्यात्मिक जानकारी।"
-/>
-<meta
-  name="twitter:image"
-  content="https://shubhamnarmadashivling.com/60607.jpg"
-/>
-
-{/* JSON-LD Knowledge Graph */}
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Organization",
-          "@id": "https://shubhamnarmadashivling.com/#organization",
-          "name": "Shubham Narmada Shivling",
-          "url": "https://shubhamnarmadashivling.com",
-          "logo": "https://shubhamnarmadashivling.com/alok2.png",
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "Madhya Pradesh",
-            "addressCountry": "India"
-          }
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://shubhamnarmadashivling.com/#website",
-          "url": "https://shubhamnarmadashivling.com",
-          "name": "Shubham Narmada Shivling",
-          "publisher": {
-            "@id": "https://shubhamnarmadashivling.com/#organization"
-          },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://shubhamnarmadashivling.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "Blog",
-          "name": "Narmada Shivling Blog",
-          "url": "https://shubhamnarmadashivling.com/blog",
-          "description":
-            "नर्मदा शिवलिंग, नर्मदेश्वर शिवलिंग, महाकाल और ओंकारेश्वर से जुड़ी आध्यात्मिक जानकारी।",
-          "publisher": {
-            "@id": "https://shubhamnarmadashivling.com/#organization"
-          },
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://shubhamnarmadashivling.com/blog"
-          }
-        },
-        {
-          "@type": "Place",
-          "name": "Narmada River",
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "Madhya Pradesh",
-            "addressCountry": "India"
-          }
-        }
-      ]
-    })
-  }}
-/>
+        {/* JSON-LD Schema for BlogPage */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Blog",
+              name: "Shubham Narmada Shivling Blog",
+              url: "https://shubhamnarmadashivling.com/blog",
+              description:
+                "Spiritual and informational blogs about Narmadeshwar Shivling, Hindu worship and rituals.",
+              publisher: {
+                "@type": "Organization",
+                name: "Shubham Narmada Shivling",
+                logo: "https://shubhamnarmadashivling.com/logo.png"
+              },
+              mainEntityOfPage: "https://shubhamnarmadashivling.com/blog"
+            }),
+          }}
+        />
       </Head>
 
       {/* ===== ORIGINAL PAGE CONTENT UNCHANGED ===== */}
@@ -229,7 +171,7 @@ export default function BlogPage() {
         {/* BLOG GRID */}
         <section className="blog-grid grid gap-6 md:grid-cols-3">
           {[
-            { slug: "bakawan-narmada-shivling", title: "🕉️ बकावा नर्मदा शिवलिंग का महत्व" },
+            { slug: "bakawa-narmada-shivling", title: "🕉️ बकावा नर्मदा शिवलिंग का महत्व" },
             { slug: "home-pooja-narmada-shivling", title: "🕉️ घर में नर्मदा शिवलिंग की पूजा" },
             { slug: "janeudhari-narmada-shivling", title: "🕉️ जनेऊधारी नर्मदा शिवलिंग क्या है?" },
             { slug: "narmada-kankar-kya-hai", title: "🕉️ नर्मदा कंकर क्या होता है?" },
