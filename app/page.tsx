@@ -32,7 +32,7 @@ export default function HomePage() {
     },
     {
       title: "bakawan Special Shivling",
-      href: "/blog/bakawa-narmada-shivling",
+      href: "/blog/bakawan-narmada-shivling",
       img: "/60611.jpg",
       alt: "bakawan Special Original Narmada Shivling",
     },
