@@ -1,15 +1,37 @@
 import { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Shubham Narmda Shivling",
+  title: "Privacy Policy | Shubham Narmada Shivling",
   description:
-    "Privacy Policy of Shubham Narmda Shivling explaining how we collect, use and protect your personal data.",
+    "Shubham Narmada Shivling Privacy Policy: Learn how we protect your data, manage orders, and improve your website experience.",
+  alternates: {
+    canonical: "https://shubhamnarmadashivling.com/privacy-policy",
+  },
+  robots: "index, follow",
+  openGraph: {
+    title: "Privacy Policy | Shubham Narmada Shivling",
+    description:
+      "Shubham Narmada Shivling Privacy Policy: Learn how we protect your data, manage orders, and improve your website experience.",
+    url: "https://shubhamnarmadashivling.com/privacy-policy",
+    siteName: "Shubham Narmada Shivling",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_IN",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Shubham Narmada Shivling",
+    description:
+      "Shubham Narmada Shivling Privacy Policy: Learn how we protect your data and manage orders.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function PrivacyPolicy() {
   return (
     <main className="container">
-      <h1>Privacy Policy</h1>
+      <h1>Privacy Policy | Shubham Narmada Shivling</h1>
       <p>Last updated: February 11, 2026</p>
 
       <p>
@@ -50,6 +72,53 @@ export default function PrivacyPolicy() {
         You may request data access, correction, deletion, or opt out of
         marketing communications.
       </p>
+    {/* JSON-LD Structured Data */}
+      <Script type="application/ld+json" id="privacy-schema">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Privacy Policy | Shubham Narmada Shivling",
+          "url": "https://shubhamnarmadashivling.com/privacy-policy",
+          "description":
+            "Shubham Narmada Shivling Privacy Policy: Learn how we protect your data, manage orders, and improve your website experience.",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Shubham Narmada Shivling",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://shubhamnarmadashivling.com/alok2.png",
+              "width": 250,
+              "height": 60
+            },
+            "sameAs": [
+              "https://www.instagram.com/narmadashivling09/",
+              "https://www.facebook.com/share/16nQ9SpdD5/",
+              "https://www.youtube.com/@narmadashivling09",
+            ]
+          },
+          "mainEntity": {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Prana Pratishtha required for Narmadeshwar Shivling?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, Narmadeshwar Shivlings are Swayambhu (self-manifested) and do not require Prana Pratishtha."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is it auspicious to keep a large Shivling at home?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For household purposes, a small to medium-sized Shivling is considered ideal and auspicious."
+                }
+              }
+            ]
+          }
+        })}
+      </Script>
     </main>
   );
 }
