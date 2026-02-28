@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   description:
     "Website disclaimer for spiritual and informational content provided by Shubham Narmda Shivling.",
 };
-
 export default function Disclaimer() {
   return (
     <main className="container">
