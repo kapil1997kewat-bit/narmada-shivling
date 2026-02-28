@@ -1,102 +1,181 @@
-"use client";
+// app/about/page.tsx
+
 import Image from "next/image";
-import Head from "next/head"; // ✅ SEO ADD
+import Script from "next/script";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Original Narmadeshwar Shivling | bakawan MP India",
+  description:
+    "Buy original Narmadeshwar Shivling from bakawan & Omkareshwar, Madhya Pradesh. 100% natural Narmada River Shivling for home pooja & temple.",
+  alternates: {
+    canonical: "https://shubhamnarmadashivling.com/about",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    title: "Asli Narmada Shivling from bakawan MP",
+    description:
+      "Authentic Narmadeshwar Shivling sourced from Narmada River, Madhya Pradesh India.",
+    url: "https://shubhamnarmadashivling.com/about",
+    siteName: "Shubham Narmada Shivling",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "https://shubhamnarmadashivling.com/alok2.png",
+        width: 1200,
+        height: 630,
+        alt: "Original Narmadeshwar Shivling from Narmada River",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Original Narmadeshwar Shivling | MP India",
+    description:
+      "Buy Asli Narmada Shivling for home pooja & temple installation.",
+  },
+};
 
 export default function AboutPage() {
   return (
     <>
-      {/* ✅ SEO META DATA */}
-      <Head>
-        <title>About | Shubham Narmada Shivling | Original Narmadeshwar Shivling</title>
+      {/* ================= STRUCTURED DATA ================= */}
 
-        <meta
-          name="description"
-          content="Shubham Narmada Shivling provides original Narmadeshwar Shivling sourced from Narmada river. Buy authentic Shivling for home puja, temple installation, and spiritual worship with worldwide delivery."
-        />
+      {/* Organization + LocalBusiness */}
+      <Script
+        id="org-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Shubham Narmada Shivling",
+            image:
+              "https://shubhamnarmadashivling.com/alok2.png",
+            url: "https://shubhamnarmadashivling.com",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "bakawan",
+              addressRegion: "Madhya Pradesh",
+              addressCountry: "India",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "22.2526",
+              longitude: "76.1526",
+            },
+            sameAs: [
+              "https://www.instagram.com/narmadashivling09/",
+              "https://www.facebook.com/share/16nQ9SpdD5/",
+              "https://www.youtube.com/@narmadashivling09"
+            ],
+          }),
+        }}
+      />
 
-        {/* 100+ Keyword SEO Boost */}
-        <meta
-          name="keywords"
-          content="
-          shubham narmada shivling,narmada shivling,shivling,narmadeshwar shivling,
-          original shivling,buy shivling online,temple shivling,home puja shivling,
-          natural shivling,swayambhu shivling,banana lingam,janeudhari shivling,
-          tilakdhari shivling,white shivling,small shivling,big shivling,
-          shivling india,mahadev shivling,bholenath shivling,
-          religious items store,spiritual shop india,hindu puja items,
-          authentic shivling supplier,narmada river stone,holy stone shivling,
-          vedic puja products,traditional shivling worship,
-          narmada stone idol,temple installation shivling,
-          export shivling worldwide,online puja store,
-          premium shivling,certified shivling,spiritual ecommerce,
-          hindu temple products,shiv devotion items,
-          sacred stone worship,mahakal shivling,
-          original hindu spiritual items,
-          natural narmadeshwar shivling seller,
-          best shivling price india,
-          narmada shivling shop,
-          authentic shivling seller india
-          "
-        />
+      {/* Breadcrumb */}
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://shubhamnarmadashivling.com",
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "About",
+                item: "https://shubhamnarmadashivling.com/about",
+              },
+            ],
+          }),
+        }}
+      />
 
-        {/* Open Graph */}
-        <meta property="og:title" content="Shubham Narmada Shivling" />
-        <meta property="og:description" content="Original Narmada Shivling supplier" />
-        <meta property="og:url" content="https://shubhamnarmadashivling.com/about" />
-        <meta property="og:type" content="website" />
+      {/* Image Schema */}
+      <Script
+        id="image-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            contentUrl:
+              "https://shubhamnarmadashivling.com/alok2.png",
+            name: "Original Narmadeshwar Shivling",
+            description:
+              "Natural Narmada River Shivling from bakawan Madhya Pradesh India",
+          }),
+        }}
+      />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://shubhamnarmadashivling.com/about"
-        />
+      {/* FAQ Schema */}
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "असली नर्मदेश्वर शिवलिंग कहाँ से मिलता है?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "असली नर्मदेश्वर शिवलिंग मध्य प्रदेश के बकावां और ओंकारेश्वर क्षेत्र की पवित्र नर्मदा नदी से प्राप्त होता है।",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "घर में कौन सा शिवलिंग रखना शुभ होता है?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "घर के लिए प्राकृतिक नर्मदेश्वर शिवलिंग सबसे शुभ और ऊर्जा से भरपूर माना जाता है।",
+                },
+              },
+            ],
+          }),
+        }}
+      />
 
-        {/* Robots */}
-        <meta name="robots" content="index, follow" />
-
-        {/* JSON-LD Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "Shubham Narmada Shivling",
-              url: "https://shubhamnarmadashivling.com",
-              logo: "https://shubhamnarmadashivling.com/logo.png",
-              description:
-                "Original Narmadeshwar Shivling supplier providing authentic spiritual products worldwide.",
-              sameAs: [
-                "https://www.facebook.com/share/16nQ9SpdD5/",
-                "https://www.instagram.com/narmadashivling09/",
-                "https://www.youtube.com/@narmadashivling09"
-              ]
-            }),
-          }}
-        />
-      </Head>
-
-      {/* ======= YOUR ORIGINAL CODE (UNCHANGED) ======= */}
+      {/* ================= CONTENT ================= */}
 
       <div className="about-page px-4 py-10 bg-white text-gray-800">
         <main className="container mx-auto max-w-6xl mt-24 space-y-10">
 
-        {/* IMAGE 1 FULL WIDTH */}
-        <section className="w-full mb-8">
-          <Image
-            src="/alok2.png"
-            alt="Special Narmada Shivling Top"
-            width={1200}
-            height={600}
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-            priority
-            style={{ width: "100%", height: "auto" }}
-          />
-        </section>
+          {/* ONLY ONE H1 */}
+          <h1 className="text-3xl font-bold text-center">
+            Original Narmadeshwar Shivling from bakawan Narmada River Madhya Pradesh India
+          </h1>
 
-        {/* Welcome Section */}
-        <section className="welcome-section text-lg leading-relaxed space-y-4">
-          <p>
+          {/* IMAGE 1 */}
+          <section>
+            <Image
+              src="/alok2.png"
+              alt="Original Narmadeshwar Shivling from bakawan Narmada River Madhya Pradesh India"
+              title="Asli Narmada Shivling for Home Pooja"
+              width={1200}
+              height={600}
+              priority
+              className="w-full rounded-lg shadow-lg"
+            />
+          </section>
+
+          {/* YOUR ORIGINAL CONTENT (UNCHANGED TEXT) */}
+          <section className="text-lg leading-relaxed space-y-4">
+           <p>
             <strong>बकावां की प्रसिद्ध Shubham Narmada Shivling Shop</strong> — यहाँ आपको
             Original Narmada Shivling, Banana Lingam, Swayambhu Shivling,
             Divya Narmada Shivling और Temple Shivling जैसे सभी प्रकार के
@@ -144,21 +223,31 @@ export default function AboutPage() {
           </ul>
         </section>
 
-        {/* IMAGE 2 FULL WIDTH */}
-        <section className="w-full mb-8">
-          <Image
-            src="/shubham1.png"
-            alt="Special Narmada Shivling Top"
-            width={1200}
-            height={600}
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
-            priority
-            style={{ width: "100%", height: "auto" }}
-          />
-        </section>
+          {/* H2 */}
+          <section>
+            <h2 className="text-2xl font-semibold">
+              Narmada River Origin – bakawan & Omkareshwar MP
+            </h2>
+            <p>
+              हमारे सभी Original Narmadeshwar Shivling सीधे पवित्र नर्मदा नदी
+              से प्राप्त किये जाते हैं।
+            </p>
+          </section>
 
-      </main>
-    </div>
+          {/* IMAGE 2 */}
+          <section>
+            <Image
+              src="/shubham1.png"
+              alt="Natural Narmada River Shivling Omkareshwar Madhya Pradesh India"
+              width={1200}
+              height={600}
+              loading="lazy"
+              className="w-full rounded-lg shadow-lg"
+            />
+          </section>
+
+        </main>
+      </div>
     </>
   );
 }
