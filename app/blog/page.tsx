@@ -171,7 +171,7 @@ export default function BlogPage() {
         {/* BLOG GRID */}
         <section className="blog-grid grid gap-6 md:grid-cols-3">
           {[
-            { slug: "bakawa-narmada-shivling", title: "🕉️ बकावा नर्मदा शिवलिंग का महत्व" },
+            { slug: "bakawan-narmada-shivling", title: "🕉️ बकावा नर्मदा शिवलिंग का महत्व" },
             { slug: "home-pooja-narmada-shivling", title: "🕉️ घर में नर्मदा शिवलिंग की पूजा" },
             { slug: "janeudhari-narmada-shivling", title: "🕉️ जनेऊधारी नर्मदा शिवलिंग क्या है?" },
             { slug: "narmada-kankar-kya-hai", title: "🕉️ नर्मदा कंकर क्या होता है?" },
