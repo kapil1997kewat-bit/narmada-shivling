@@ -18,7 +18,7 @@ topImage?: string;
 // ✅ Blog data
 export const blogs: Blog[] = [
   {
-  slug: "bakawa-narmada-shivling",
+  slug: "bakawan-narmada-shivling",
 
   title: "बकावा नर्मदा शिवलिंग का महत्व",
 
@@ -27,7 +27,7 @@ export const blogs: Blog[] = [
 
   // ⭐⭐⭐ 50+ SEO KEYWORDS ⭐⭐⭐
   keywords: [
-    "bakawa narmada shivling",
+    "bakawan narmada shivling",
     "नर्मदा शिवलिंग",
     "बकावा शिवलिंग",
     "original narmadeshwar shivling",
@@ -38,7 +38,7 @@ export const blogs: Blog[] = [
     "natural shivling",
     "narmadeshwar stone",
     "shivling madhya pradesh",
-    "bakawa spiritual stone",
+    "bakawan spiritual stone",
     "authentic shivling",
     "narmada river stone",
     "shivling importance",
@@ -51,7 +51,7 @@ export const blogs: Blog[] = [
     "shiva worship stone",
     "नर्मदेश्वर शिवलिंग",
     "shivling purchase india",
-    "bakawa mp shivling",
+    "bakawan mp shivling",
     "shiva stone benefits",
     "positive energy shivling",
     "temple stone shivling",
@@ -71,7 +71,7 @@ export const blogs: Blog[] = [
     "mahadev pooja items",
     "hindu worship items",
     "shiva temple stone",
-    "bakawa region stone",
+    "bakawan region stone",
     "shivling natural form",
     "energy healing stone",
     "divine shivling",
@@ -1052,7 +1052,7 @@ sections: [
       {
         title: "असली नर्मदेश्वर शिवलिंग कहां से मिलता है?",
         paragraphs: [
-          "असली नर्मदेश्वर शिवलिंग केवल मध्य प्रदेश के ग्राम बकावां (Bakawan) से ही प्राप्त होता है। यह गांव मां नर्मदा नदी के तट पर स्थित है।",
+          "असली नर्मदेश्वर शिवलिंग केवल मध्य प्रदेश के ग्राम बकावां (bakawann) से ही प्राप्त होता है। यह गांव मां नर्मदा नदी के तट पर स्थित है।",
           "ग्रामीण नाव द्वारा नदी के बीच स्थित टापुओं से शिवलिंग योग्य पत्थरों का चयन करते हैं। हर पत्थर शिवलिंग नहीं बनता, केवल वही जिसमें प्राकृतिक ऊर्जा होती है।",
         ],
       },
